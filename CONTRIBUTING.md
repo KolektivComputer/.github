@@ -8,11 +8,11 @@ Projects follow the Contributor Covenant when a `CODE_OF_CONDUCT.md` is present 
 
 ## Ways to contribute
 
-- **Code**: features, bug fixes, tests, build and tooling
-- **Documentation**: guides, references, typo fixes
-- **Bug reports**: clear reproductions
-- **Design feedback**: UI, UX, and naming
-- **Translations**: when a project has i18n set up
+- **Code** — features, bug fixes, tests, build and tooling
+- **Documentation** — guides, references, typo fixes
+- **Bug reports** — clear reproductions
+- **Design feedback** — UI, UX, and naming
+- **Translations** — when a project has i18n set up
 
 Prefer the repository’s issue templates when they exist. Otherwise open a plain issue with expected vs actual behavior, steps to reproduce, and which component you hit.
 
@@ -54,7 +54,7 @@ Imperative subject. Details in the body. Reference issues in the body or footer.
 
 ## AI-assisted contributions
 
-AI tools are welcome. Code can be AI assisted to varying degrees as long as the human responsible can explain it in the PR without using AI to write the PR. That is the whole policy; the rules below are what it means in practice.
+AI tools are welcome. Code can be AI-assisted to any degree as long as the human responsible can explain it in the PR without using AI to write the PR. That is the whole policy. The rules below are what it means in practice.
 
 - Allowed at any level: autocomplete, first drafts, refactors, tests, explanations.
 - You must explain every change yourself in review.
@@ -74,4 +74,4 @@ Inbound equals outbound for that repo. There is no org-wide CLA unless a reposit
 
 - Issues and pull requests are the main place to talk.
 - Be patient and kind. Reviewers are people.
-- Ask early. There is no such thing as a stupid question.
+- Ask early. No question is too small.
