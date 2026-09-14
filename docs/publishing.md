@@ -14,7 +14,7 @@ Org Gradle plugin (in progress): [gradle-conventions](https://github.com/Kolekti
 - Dual: Yuri Capital npm **and** `https://npm.pkg.github.com` with `@kolektiv:registry=…`
 
 ## JSR
-- Claim `@kolektiv` (or `@kolektiv-computer`) on jsr.io when configuring accounts
+- JSR scope is **`@kolektiv`** (owned). Link each package to its GitHub repo for OIDC publish
 - `jsr.json` + OIDC from Actions (`id-token: write`) — **not** a replacement for npm publish
 
 ## Reusable workflow templates
