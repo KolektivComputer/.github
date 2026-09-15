@@ -13,12 +13,21 @@ Org-wide label prefixes for KolektivComputer repositories. Projects may add thei
 
 ## How to use
 
-- Give every issue exactly one `c/` label.
+### Category
+- Give every issue a `c/` label.
+- **`c/feature` always pairs with `c/enhancement`** (a feature is an enhancement). Do not strip either.
+- A feature epic may combine `c/feature`, `c/epic`, and `c/enhancement`.
+- A large bug may combine `c/bug` and `c/epic`.
+- Other categories (`c/chore`, …) stay a single `c/` unless a project says otherwise.
+
+### Target, integration, attention
 - Add `t/` when the change is platform-specific.
 - Add `i/` when the work is about a named integration.
-- `a/blocked`: work cannot proceed (link the blocker). `a/needs-design`: product or UX must decide before build.
+- `a/blocked`: work cannot proceed (link the blocker in GitHub relationships). `a/needs-design`: product or UX must decide before build.
 - `a/wontfix`, `a/invalid`, or `a/duplicate`: close-as-not-planned, then close the issue (usually as not planned). Do not leave those open.
+
+### Types and priority
+- Use GitHub’s built-in issue types (Bug / Feature / Task), priority, and estimate — not `p/` or `size/` labels.
 - Questions go in Discussions. Do not use a `question` or `c/question` label on issues.
-- Do not add `p/` or `size/` labels. Use GitHub’s built-in priority, estimate, and issue types (Bug / Feature / Task) instead.
 
 Project-specific labels are fine. Prefer extending `i/` or `t/` over inventing a new prefix without updating this doc.
