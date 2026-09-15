@@ -11,6 +11,14 @@ Preferred libraries and repo hygiene for KolektivComputer. Scaffold flags (Katal
 - Optional thin `@kolektiv/*` npm wrappers only for `npx` — not the product story.
 - Always spell **Kascade**.
 
+## Nix (KolektivComputer/nix)
+
+- One flake input: `github:KolektivComputer/nix`.
+- Build `packages.<system>.{katalog,kascade,…}` or apply `overlays.default` for `pkgs.kolektiv.*`.
+- Prefer Nix pins for Node/tooling on NixOS — not `vp env`.
+- Aggregator; per-app `package.nix` / flakes live in app repos.
+
+
 ## Kotlin / KMP
 
 Preferred libs · when to use · scaffold flag — *TBD (Researcher matrix)*.
