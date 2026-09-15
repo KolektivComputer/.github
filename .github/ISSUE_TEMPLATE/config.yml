@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
   - name: Questions
-    url: https://github.com/orgs/KolektivComputer/discussions
+    url: https://github.com/KolektivComputer/.github/discussions
     about: Ask questions and discuss here — not in issues.
