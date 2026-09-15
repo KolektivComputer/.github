@@ -16,9 +16,9 @@ Org-wide label prefixes for KolektivComputer repositories. Projects may add thei
 ### Category
 - Give every issue a `c/` label.
 - **`c/feature` always pairs with `c/enhancement`** (a feature is an enhancement). Do not strip either.
-- A feature epic may combine `c/feature`, `c/epic`, and `c/enhancement`.
-- A large bug may combine `c/bug` and `c/epic`.
-- Other categories (`c/chore`, …) stay a single `c/` unless a project says otherwise.
+- A feature epic may use `c/feature` + `c/enhancement` + `c/epic` together.
+- A large bug may use `c/bug` + `c/epic`.
+- Otherwise prefer a single `c/` unless a project says otherwise.
 
 ### Target, integration, attention
 - Add `t/` when the change is platform-specific.
