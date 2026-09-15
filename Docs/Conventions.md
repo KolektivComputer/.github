@@ -2,6 +2,15 @@
 
 Preferred libraries and repo hygiene for KolektivComputer. Scaffold flags (Katalog) map to these sections.
 
+
+## Rust CLIs (Katalog, Kascade)
+
+- Pure CLI devtools are **Rust** (Cargo crates). Install: `cargo install` / GH Releases binaries.
+- Preferred stack: **clap** (derive) · **serde** (+ yaml) for config/graphs · **tokio** only when async (e.g. BSP JSON-RPC) needs it.
+- Prefer existing BSP Rust clients/servers before rolling a wire layer (Kascade).
+- Optional thin `@kolektiv/*` npm wrappers only for `npx` — not the product story.
+- Always spell **Kascade**.
+
 ## Kotlin / KMP
 
 Preferred libs · when to use · scaffold flag — *TBD (Researcher matrix)*.
