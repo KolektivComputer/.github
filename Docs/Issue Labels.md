@@ -34,14 +34,13 @@ Org-wide label prefixes for KolektivComputer repositories. Projects may add thei
 
 ## Keel-only targets
 
-Org core `t/` labels still apply on Keel. These extra targets are **Keel-only** (match FrameworkPicker / adapter ids):
+In addition to the org core `t/` set:
 
-| Prefix | Meaning | Keel examples |
-| --- | --- | --- |
-| `t/` | **Target** | `t/svelte`, `t/react`, `t/vue`, `t/solid`, `t/preact`, `t/lit`, `t/angular`, `t/vanilla`, `t/ktor` |
+| Examples |
+| --- |
+| `t/svelte`, `t/react`, `t/vue`, `t/solid`, `t/preact`, `t/lit`, `t/angular`, `t/vanilla`, `t/ktor` |
 
-- Use `t/ktor` for host / call-site runtime work (prefer over generic `t/server` when it’s specifically the Ktor surface).
-- Use framework tags (`t/svelte`, …, `t/vanilla`) for pack / adapter work.
-- Other repos keep the org core `t/` set unless they add their own stack tags.
+Use `t/ktor` for host and call-site work. Use the framework tags for pack and adapter work. Ids match FrameworkPicker. Other repos stay on the org core `t/` set unless they add their own stack tags.
+
 
 Project-specific labels are fine. Prefer extending `i/` or `t/` over inventing a new prefix without updating this doc.
