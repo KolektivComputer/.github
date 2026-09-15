@@ -7,7 +7,7 @@ Org-wide label prefixes for KolektivComputer repositories. Projects may add thei
 | Prefix | Meaning | Examples |
 | --- | --- | --- |
 | `c/` | **Category** — what kind of work | `c/bug`, `c/feature`, `c/enhancement`, `c/chore`, `c/epic` |
-| `t/` | **Target** — where it lands | `t/android`, `t/ios`, `t/desktop`, `t/web`, `t/server` |
+| `t/` | **Target** — where it lands | `t/android`, `t/ios`, `t/desktop`, `t/web`, `t/server`, `t/repo`, `t/cloudflare` |
 | `i/` | **Integration** — external system | `i/discord`, `i/gcal`, `i/microsoft`, `i/oauth` (project-specific as needed) |
 | `a/` | **Attention** — triage status or disposition | `a/blocked`, `a/needs-design`, `a/wontfix`, `a/invalid`, `a/duplicate` |
 
@@ -22,6 +22,8 @@ Org-wide label prefixes for KolektivComputer repositories. Projects may add thei
 
 ### Target, integration, attention
 - Add `t/` when the change is platform-specific.
+- `t/repo`: repo metadata — workflows, license, README, other repo docs.
+- `t/cloudflare`: Cloudflare Workers / Pages / related edge deploy (create on repos that have them).
 - Add `i/` when the work is about a named integration.
 - `a/blocked`: work cannot proceed (link the blocker in GitHub relationships). `a/needs-design`: product or UX must decide before build.
 - `a/wontfix`, `a/invalid`, or `a/duplicate`: close-as-not-planned, then close the issue (usually as not planned). Do not leave those open.
