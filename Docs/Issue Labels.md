@@ -19,10 +19,6 @@ Org-wide label prefixes for KolektivComputer repositories. Projects may add thei
 - Use `a/blocked` when work cannot proceed (link the blocker). Use `a/needs-design` when product or UX must decide before build.
 - Use `a/wontfix`, `a/invalid`, or `a/duplicate` for close-as-not-planned outcomes, then close the issue (usually as not planned). Do not leave those open.
 - Questions belong in Discussions. Do not use a `question` or `c/question` label on issues.
-
-## Suggested (not required org-wide yet)
-
-- `p/p0` … `p/p2` — priority
-- `size/S` · `size/M` · `size/L` — rough effort
+- Do not add `p/` or `size/` labels. Use GitHub’s built-in priority, estimate, and issue types (Bug / Feature / Task) instead.
 
 Project-specific labels are fine. Prefer extending `i/` or `t/` over inventing a new prefix without updating this doc.
