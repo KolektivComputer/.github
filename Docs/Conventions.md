@@ -14,10 +14,12 @@ Preferred libraries and repo hygiene for KolektivComputer. Scaffold flags (Katal
 ## Nix (KolektivComputer/nix)
 
 - Umbrella flake: app repos export flakes; this repo lists them as inputs and re-exports.
-- Idiomatic: `inputs.kolektiv.packages.${system}.katalog` (select packages by attr). Overlay → `pkgs.kolektiv.*`.
+- Idiomatic: `inputs.kolektiv.packages.${system}.katalog` (select by attr). Overlay → `pkgs.kolektiv.*`.
+- **Two families, one flake:** `packages.*` for CLIs/desktop; `nixosModules.*` (+ optional `*-server` packages) for deployables. Clear names (`kalendee` vs `kalendee-server`). No second nix-server repo/branch.
+- **Per-repo:** desktop Linux target ⇒ flake with `packages`; deployable server ⇒ module and/or `*-server` package.
 - Do not invent `inputs.kolektiv.pkgs`.
 - Prefer Nix pins for Node/tooling on NixOS — not `vp env`.
-- Extending: new app flake + input (`nixpkgs.follows`) + one re-export line.
+- Extending: new app flake + input (`nixpkgs.follows`) + re-export lines.
 
 
 ## Kotlin / KMP
