@@ -6,7 +6,6 @@ body:
     id: what-happened
     attributes:
       label: What happened
-      description: What went wrong.
     validations:
       required: true
   - type: textarea
@@ -29,7 +28,7 @@ body:
     id: environment
     attributes:
       label: Environment
-      description: OS, client, and version (or commit).
+      description: OS, client, version
       placeholder: e.g. macOS 15 · Web · v0.1.0
     validations:
       required: false
