@@ -68,7 +68,7 @@ AI tools are welcome. Code can be AI-assisted to any degree as long as the human
 
 Each repository has its own license (for example Apache-2.0 on Keel, AGPL on Kalendee). By opening a pull request you agree that your contribution may be distributed under that repository’s license. Only submit code you can license that way. Do not paste from incompatible or proprietary sources.
 
-Inbound equals outbound for that repo. There is no org-wide CLA unless a repository says otherwise.
+By opening a pull request you agree your contribution is offered under that repository's existing LICENSE (inbound equals outbound). There is no org-wide CLA unless a specific repo requires one.
 
 ## Community
 
