@@ -54,15 +54,16 @@ Imperative subject. Details in the body. Reference issues in the body or footer.
 
 ## AI-assisted contributions
 
-AI tools are welcome. Code can be AI-assisted to any degree as long as the human responsible can explain it in the PR without using AI to write the PR. That is the whole policy. The rules below are what it means in practice.
+AI tools are welcome. Code can be AI-assisted to any degree as long as a human owns the change and can explain it. That is the whole policy. The rules below are what it means in practice.
 
-- Allowed at any level: autocomplete, first drafts, refactors, tests, explanations.
-- You must explain every change yourself in review.
-- Write the PR description and review replies yourself. Do not paste AI-generated PR text.
-- Disclose AI usage in the PR (tools and what they helped with). Honest disclosure is never penalized.
-- “The AI wrote it” is not an acceptable review answer. If you cannot explain a hunk, remove it or learn it before resubmitting.
+- Allowed at any level: autocomplete, first drafts, refactors, tests, explanations, and agent-opened pull requests.
+- **Agent-opened PRs must say so up front** (title or first line of the description: AI-generated). The description must clearly and concisely cover what changed, why, and the implications for the rest of the codebase or project goals.
+- A **named human** stays active in the PR discussion so other maintainers can ask questions. That human must be able to explain every hunk. The burden of understanding sits on them, not on the agent or on reviewers. "The AI wrote it" is not an acceptable answer.
+- Disclose which tools helped and what they did. Honest disclosure is never penalized.
 - You are responsible for correctness, tests, licensing, and security of what you submit.
-- If you use a coding agent, point it at that repository’s `AGENTS.md` when one exists.
+- If you use a coding agent, point it at that repository's `AGENTS.md` when one exists.
+
+Humans who open PRs themselves still write the description in their own words. Agent-opened PRs are the exception that may ship an AI-written description, so long as it meets the clarity bar above and a human owns the thread.
 
 ## Licensing
 
