@@ -7,7 +7,7 @@ Org-wide label prefixes for KolektivComputer repositories. Projects may add thei
 | Prefix | Meaning | Examples |
 | --- | --- | --- |
 | `c/` | **Category** — what kind of work | `c/bug`, `c/feature`, `c/enhancement`, `c/chore`, `c/epic` |
-| `t/` | **Target** — where it lands | `t/android`, `t/ios`, `t/desktop`, `t/web`, `t/server`, `t/repo`, `t/cloudflare` |
+| `t/` | **Target** — where it lands | `t/android`, `t/ios`, `t/desktop`, `t/web`, `t/server`, `t/docs`, `t/repo`, `t/cloudflare` |
 | `i/` | **Integration** — external system | `i/discord`, `i/gcal`, `i/microsoft`, `i/oauth` (project-specific as needed) |
 | `a/` | **Attention** — triage status or disposition | `a/blocked`, `a/needs-design`, `a/wontfix`, `a/invalid`, `a/duplicate` |
 
@@ -21,8 +21,12 @@ Org-wide label prefixes for KolektivComputer repositories. Projects may add thei
 - Otherwise prefer a single `c/` unless a project says otherwise.
 
 ### Target, integration, attention
-- Add `t/` when the change is platform-specific.
-- `t/repo`: repo metadata — workflows, license, README, other repo docs.
+- Add `t/` when the change is platform-specific or lands in a named place.
+- `t/docs` is the docs tree and the words that ship with the repo: `docs/`, README, changelog, `llms.txt`. It is a target, not a kind of work. Do not add `c/docs`.
+  - a docs bug is `c/bug` + `t/docs`
+  - a docs feature is `c/feature` + `c/enhancement` + `t/docs`
+  - a docs chore is `c/chore` + `t/docs`
+- `t/repo` is repo metadata that is not that tree: workflows, license, issue templates, `CODEOWNERS`, community files. README is `t/docs`, not `t/repo`. Use both only when one change touches both.
 - `t/cloudflare`: Cloudflare Workers / Pages / related edge deploy (create on repos that have them).
 - Add `i/` when the work is about a named integration.
 - `a/blocked`: work cannot proceed (link the blocker in GitHub relationships). `a/needs-design`: product or UX must decide before build.
